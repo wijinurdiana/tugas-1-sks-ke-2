@@ -1,0 +1,27 @@
+
+<html>
+    <title> java
+    </title>
+<script type="text/javascript">
+    function myfunction(){
+        var x, text;
+        // get the value of the input field with id="numb"
+    x=document.getElementById("numb").value;
+    // if x is not a number or less than one or greater than 10 
+    if (isnan(x)||x<1||x>10){
+        text="input on valid";
+    }else{
+        text="input ok";
+    }
+    document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+    </head>
+    <body>
+        <head>
+    <h1> javasript can validate input</h1>
+    <p> please input number between 1 and 10</p>
+    <input id='numb'><button type="button" onclick="myfunction()">submit</button>
+<p id=""demo:></p>
+    </body>
+</html>
